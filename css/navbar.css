@@ -1,0 +1,68 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--bg-border);
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.navbar__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navbar__logo .highlight {
+  font-weight: var(--weight-bold);
+  color: var(--accent);
+}
+
+.navbar__logo .dim {
+  font-weight: var(--weight-medium);
+  color: var(--text-secondary);
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar__link {
+  font-family: var(--font-mono);
+  font-weight: var(--weight-regular);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.navbar__link:hover {
+  color: var(--accent);
+}
+
+.theme-toggle {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+}

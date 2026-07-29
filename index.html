@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Andrés — Ingeniero en evolución constante hacia la arquitectura de nube">
+  <meta property="og:title" content="andres_dev">
+  <meta property="og:description" content="Ingeniero en evolución constante hacia la arquitectura de nube">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <title>andres_dev</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="highlight">andres</span><span class="dim">_dev</span>
+      </a>
+      <div class="navbar__links">
+        <a href="#about" class="navbar__link">Sobre mí</a>
+        <a href="#skills" class="navbar__link">Skills</a>
+        <a href="#projects" class="navbar__link">Proyectos</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">☀️</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="hero__greeting">&gt; Hola, soy</span>
+        <h1 class="hero__title">
+          Andrés<br>
+          <span class="accent">Dev &amp; Cloud Architect</span>
+        </h1>
+        <p class="hero__subtitle">Diseño y construyo aplicaciones web robustas</p>
+        <p class="hero__description">
+          Ingeniero en evolución constante hacia la arquitectura de nube.
+          Especializado en desarrollo full stack con enfoque en soluciones escalables.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">Ver proyectos</a>
+          <a href="assets/cv.pdf" class="btn btn--secondary" download>CV.pdf</a>
+        </div>
+      </div>
+      <div class="hero__terminal">
+        <div class="terminal__header">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--amber"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+        </div>
+        <div class="terminal__body">
+          <div class="terminal__line">
+            <span class="terminal__prompt">&gt;</span>
+            <span class="terminal__command">whoami</span>
+          </div>
+          <div class="terminal__output">andres_dev</div>
+          <div class="terminal__line">
+            <span class="terminal__prompt">&gt;</span>
+            <span class="terminal__command">cat /etc/os-release</span>
+          </div>
+          <div class="terminal__output">Full Stack Developer / Cloud Architect</div>
+          <div class="terminal__line">
+            <span class="terminal__prompt">&gt;</span>
+            <span class="terminal__command">./stack.sh</span>
+          </div>
+          <div class="terminal__output">[▲] Frontend · Backend · Cloud</div>
+          <div class="terminal__line">
+            <span class="terminal__prompt">&gt;</span>
+            <span class="terminal__cursor"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section-hidden" id="about">
+    <div class="about__inner">
+      <h2 class="about__header">
+        Ingeniero en <span class="accent">evolución constante</span><br>
+        hacia la arquitectura de nube
+      </h2>
+      <div class="about__content">
+        <div class="about__text">
+          <p>
+            Soy Andrés, desarrollador full stack apasionado por crear aplicaciones web
+            robustas y escalables. Mi enfoque combina buenas prácticas de desarrollo
+            con principios de arquitectura cloud para entregar soluciones de alto impacto.
+          </p>
+          <p>
+            Actualmente me especializo en tecnologías modernas de frontend y backend,
+            con un fuerte énfasis en despliegue cloud, contenerización y automatización
+            de infraestructura.
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <div class="stat__number">3+</div>
+            <div class="stat__label">Años de experiencia</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">15+</div>
+            <div class="stat__label">Proyectos completados</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">10+</div>
+            <div class="stat__label">Stack de tecnologías</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">∞</div>
+            <div class="stat__label">Ganas de aprender</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section-hidden" id="skills">
+    <div class="skills__inner">
+      <h2 class="skills__title">Habilidades y herramientas clave</h2>
+      <p class="skills__subtitle">Ecosistema full stack con enfoque cloud</p>
+      <div class="skills__grid" id="skillsGrid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section-hidden" id="projects">
+    <div class="projects__inner">
+      <h2 class="projects__title">Sistemas y soluciones destacadas</h2>
+      <div class="projects__grid" id="projectsGrid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section-hidden" id="contact">
+    <div class="contact__inner">
+      <h2 class="contact__title">Diseñemos la infraestructura de tu próximo sistema</h2>
+      <p class="contact__subtitle">
+        Estoy abierto a colaboraciones, proyectos freelance y oportunidades laborales.
+      </p>
+      <div class="contact__methods">
+        <a href="mailto:andresmonkdev7@gmail.com" class="contact-method">
+          <span class="contact-method__icon">✉</span>
+          andresmonkdev7@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/andresmonkdev7" target="_blank" rel="noopener" class="contact-method">
+          <span class="contact-method__icon">🔗</span>
+          LinkedIn
+        </a>
+        <a href="https://github.com/andresmonkdev7" target="_blank" rel="noopener" class="contact-method">
+          <span class="contact-method__icon">🐙</span>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2026 andres_dev — Diseñado y construido con dedicación
+  </footer>
+
+  <script src="js/skills.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+:root {
+  --accent: #00F0A0;
+  --accent-5: rgba(0, 240, 160, 0.05);
+  --accent-14: rgba(0, 240, 160, 0.14);
+
+  --bg-primary: #06060A;
+  --bg-secondary: #0C0D14;
+  --bg-tertiary: #161822;
+  --bg-border: #1E2230;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+  --font-body: 'Geist', sans-serif;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --nav-height: 80px;
+  --max-width: 1200px;
+  --section-padding: 80px 24px;
+}
+
+[data-theme="light"] {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #E2E8F0;
+  --bg-border: #CBD5E1;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+}
