@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Andrés — Ingeniero en evolución constante hacia la arquitectura de nube">
-  <meta property="og:title" content="andres_dev">
-  <meta property="og:description" content="Ingeniero en evolución constante hacia la arquitectura de nube">
+  <meta name="description" content="Portafolio de Andrés Moncada — Full Stack Developer | Cloud & DevOps">
+  <meta property="og:title" content="andres_architect">
+  <meta property="og:description" content="Full Stack Developer | Cloud & DevOps">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-  <title>andres_dev</title>
+  <title>andres_architect</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,35 +17,78 @@
   <nav class="navbar" id="navbar">
     <div class="navbar__inner">
       <a href="#" class="navbar__logo">
-        <span class="highlight">andres moncada</span><span class="dim">_dev</span>
+        <span class="navbar__logo-name">andres_</span><span class="navbar__logo-sub">architect</span>
       </a>
       <div class="navbar__links">
         <a href="#about" class="navbar__link">Sobre mí</a>
         <a href="#skills" class="navbar__link">Skills</a>
         <a href="#projects" class="navbar__link">Proyectos</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">☀️</button>
+        <a href="#contact" class="navbar__link">Contacto</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        <a href="assets/cv.pdf" class="btn btn--secondary navbar__btn" download>
+          <svg class="icon icon--file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+            <path d="M10 9H8"></path>
+            <path d="M16 13H8"></path>
+            <path d="M16 17H8"></path>
+          </svg>
+          CV.pdf
+        </a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="hero" id="hero">
+  <section class="hero section-hidden" id="hero">
     <div class="hero__bg"></div>
     <div class="hero__inner">
       <div class="hero__content">
-        <span class="hero__greeting">&gt; Hola, soy</span>
-        <h1 class="hero__title">
-          Andrés Moncada <br>
-          <span class="accent">Desarrollador de software  &amp; Devops</span>
-        </h1>
-        <p class="hero__subtitle">Diseño y construyo aplicaciones web robustas</p>
+        <div class="tech-badge hero__badge">
+          <svg class="icon icon--terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+          <span>Ready for Transition to Solutions Architect</span>
+        </div>
+        <div class="hero__title-group">
+          <h1 class="hero__title">Andres Moncada</h1>
+          <p class="hero__role">Full Stack Developer | Cloud &amp; DevOps</p>
+        </div>
         <p class="hero__description">
-          Ingeniero en evolución constante hacia la arquitectura de nube.
-          Especializado en desarrollo full stack con enfoque en soluciones escalables.
+          Diseño y construyo aplicaciones web robustas desde el frontend hasta la base de datos,
+          implementando arquitecturas nativas en la nube eficientes, seguras y altamente escalables.
         </p>
-        <div class="hero__cta">
-          <a href="#projects" class="btn btn--primary">Ver proyectos</a>
-          <a href="assets/cv.pdf" class="btn btn--secondary" download>CV.pdf</a>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">
+            Ver proyectos
+            <svg class="icon icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--secondary">
+            Contacto
+            <svg class="icon icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
         </div>
       </div>
       <div class="hero__terminal">
@@ -53,27 +96,21 @@
           <span class="terminal__dot terminal__dot--red"></span>
           <span class="terminal__dot terminal__dot--amber"></span>
           <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">architect_setup.sh</span>
         </div>
         <div class="terminal__body">
-          <div class="terminal__line">
-            <span class="terminal__prompt">&gt;</span>
-            <span class="terminal__command">whoami</span>
-          </div>
-          <div class="terminal__output">andres_dev</div>
-          <div class="terminal__line">
-            <span class="terminal__prompt">&gt;</span>
-            <span class="terminal__command">cat /etc/os-release</span>
-          </div>
-          <div class="terminal__output">Full Stack Developer / Cloud Architect</div>
-          <div class="terminal__line">
-            <span class="terminal__prompt">&gt;</span>
-            <span class="terminal__command">./stack.sh</span>
-          </div>
-          <div class="terminal__output">[▲] Frontend · Backend · Cloud</div>
-          <div class="terminal__line">
-            <span class="terminal__prompt">&gt;</span>
-            <span class="terminal__cursor"></span>
-          </div>
+          <p class="terminal__line">
+            <span class="terminal__prompt">andres@monolith-to-microservices:~$</span><span class="terminal__cmd"> terraform apply --auto-approve</span>
+          </p>
+          <p class="terminal__line terminal__line--muted">aws_vpc.main: Creating... [1/3]</p>
+          <p class="terminal__line terminal__line--ok">✔ vpc-03487c9f28d73b (10.0.0.0/16) created successfully.</p>
+          <p class="terminal__line terminal__line--muted">aws_ecs_cluster.production: Creating... [2/3]</p>
+          <p class="terminal__line terminal__line--ok">✔ cluster-ecs-production created. Status: ACTIVE.</p>
+          <p class="terminal__line terminal__line--muted">aws_route53_record.app: Provisioning DNS entries...</p>
+          <p class="terminal__line terminal__line--done">Apply complete! Resources: 12 added, 0 changed, 0 destroyed.</p>
+          <p class="terminal__line terminal__line--output">
+            Outputs: api_gateway_endpoint = "<span class="terminal__url">https://api.v2.andresmonk.dev</span>"
+          </p>
         </div>
       </div>
     </div>
@@ -82,40 +119,29 @@
   <!-- About -->
   <section class="about section-hidden" id="about">
     <div class="about__inner">
-      <h2 class="about__header">
-        Ingeniero en <span class="accent">evolución constante</span><br>
-        hacia la arquitectura de nube
-      </h2>
+      <div class="section-header">
+        <p class="section-header__eyebrow"><span class="section-header__arrow">&gt;</span> Sobre mí</p>
+        <h2 class="section-header__title">Ingeniero en evolución constante hacia la arquitectura de nube</h2>
+      </div>
       <div class="about__content">
         <div class="about__text">
           <p>
-            Soy Andrés, desarrollador full stack apasionado por crear aplicaciones web
-            robustas y escalables. Mi enfoque combina buenas prácticas de desarrollo
-            con principios de arquitectura cloud para entregar soluciones de alto impacto.
+            Con más de 5 años de trayectoria desarrollando aplicaciones web complejas, he consolidado
+            una base técnica sólida en el frontend y backend. Mi pasión por optimizar el rendimiento,
+            asegurar la disponibilidad y automatizar procesos me ha llevado de manera natural a
+            especializarme en Cloud Computing y DevOps.
           </p>
           <p>
-            Actualmente me especializo en tecnologías modernas de frontend y backend,
-            con un fuerte énfasis en despliegue cloud, contenerización y automatización
-            de infraestructura.
+            Actualmente enfoco mi crecimiento profesional en el rol de Solutions Architect, integrando
+            infraestructura como código (IaC), contenedores y pipelines de CI/CD para diseñar plataformas
+            que no solo resuelvan necesidades inmediatas, sino que escalen eficientemente hacia el futuro.
           </p>
         </div>
-        <div class="about__stats">
-          <div class="stat">
-            <div class="stat__number">3+</div>
-            <div class="stat__label">Años de experiencia</div>
+        <div class="about__avatar-container">
+          <div class="about__avatar" aria-label="Foto de Andres Moncada">
+            <img src="assets/images/am.webp" alt="Foto de Andres Moncada" class="about__avatar-img">
           </div>
-          <div class="stat">
-            <div class="stat__number">15+</div>
-            <div class="stat__label">Proyectos completados</div>
-          </div>
-          <div class="stat">
-            <div class="stat__number">10+</div>
-            <div class="stat__label">Stack de tecnologías</div>
-          </div>
-          <div class="stat">
-            <div class="stat__number">∞</div>
-            <div class="stat__label">Ganas de aprender</div>
-          </div>
+          <span class="radar-tag">SA_TRANSITION: 94%</span>
         </div>
       </div>
     </div>
@@ -124,8 +150,14 @@
   <!-- Skills -->
   <section class="skills section-hidden" id="skills">
     <div class="skills__inner">
-      <h2 class="skills__title">Habilidades y herramientas clave</h2>
-      <p class="skills__subtitle">Ecosistema full stack con enfoque cloud</p>
+      <div class="section-header">
+        <p class="section-header__eyebrow"><span class="section-header__arrow">&gt;</span> Stack tecnológico</p>
+        <h2 class="section-header__title">Habilidades y herramientas clave</h2>
+        <p class="section-header__description">
+          Mi ecosistema de trabajo se divide en el desarrollo full stack refinado y la arquitectura
+          de infraestructura nativa en la nube.
+        </p>
+      </div>
       <div class="skills__grid" id="skillsGrid">
       </div>
     </div>
@@ -134,7 +166,10 @@
   <!-- Projects -->
   <section class="projects section-hidden" id="projects">
     <div class="projects__inner">
-      <h2 class="projects__title">Sistemas y soluciones destacadas</h2>
+      <div class="section-header">
+        <p class="section-header__eyebrow"><span class="section-header__arrow">&gt;</span> Proyectos</p>
+        <h2 class="section-header__title">Sistemas y soluciones destacadas</h2>
+      </div>
       <div class="projects__grid" id="projectsGrid">
       </div>
     </div>
@@ -143,31 +178,43 @@
   <!-- Contact -->
   <section class="contact section-hidden" id="contact">
     <div class="contact__inner">
-      <h2 class="contact__title">Diseñemos la infraestructura de tu próximo sistema</h2>
-      <p class="contact__subtitle">
-        Estoy abierto a colaboraciones, proyectos freelance y oportunidades laborales.
-      </p>
+      <div class="section-header">
+        <p class="section-header__eyebrow"><span class="section-header__arrow">&gt;</span> Contacto</p>
+        <h2 class="section-header__title">Diseñemos la infraestructura de tu próximo sistema</h2>
+        <p class="section-header__description">
+          Si estás buscando un perfil híbrido capaz de programar software robusto y orquestar
+          despliegues automatizados, hablemos.
+        </p>
+      </div>
       <div class="contact__methods">
-        <a href="mailto:andresmonkdev7@gmail.com" class="contact-method">
-          <span class="contact-method__icon">✉</span>
-          andresmonkdev7@gmail.com
-        </a>
         <a href="https://linkedin.com/in/andresmonkdev7" target="_blank" rel="noopener" class="contact-method">
-          <span class="contact-method__icon">🔗</span>
-          LinkedIn
+          <svg class="icon icon--linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.4A6 6 0 0 1 16 8z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          linkedin.com/in/andresmonkdev7
         </a>
         <a href="https://github.com/andresmonkdev7" target="_blank" rel="noopener" class="contact-method">
-          <span class="contact-method__icon">🐙</span>
-          GitHub
+          <svg class="icon icon--github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          github.com/andresmonkdev7
+        </a>
+        <a href="mailto:andresmonkdev7@gmail.com" class="contact-method">
+          <svg class="icon icon--mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          andresmonkdev7@gmail.com
         </a>
       </div>
     </div>
+    <footer class="footer">
+      <span>© 2025 Andres Moncada. Todos los derechos reservados.</span>
+      <span class="footer__built">[BUILT_WITH_TERRAFORM_&amp;_REACT]</span>
+    </footer>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    &copy; 2026 andres_dev — Diseñado y construido con dedicación
-  </footer>
 
   <script src="js/skills.js"></script>
   <script src="js/projects.js"></script>
