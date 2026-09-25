@@ -1,0 +1,38 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_DEFAULT_REGION: us-east-2
+      BUCKET_NAME: porfolio-vanilla-tf
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync . s3://$BUCKET_NAME --delete --exclude ".git/*" --exclude ".github/*"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id E32C7EIXRD3FNT --paths "/*"
+
+      - name: Success notification
+        if: success()
+        run: echo "Deploy completado. Sitio disponible en CloudFront."
+
+      - name: Failure notification
+        if: failure()
+        run: echo "El deploy falló. Revisa los logs."

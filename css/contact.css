@@ -1,68 +1,62 @@
 .contact {
-  padding: var(--section-padding);
-  border-top: 1px solid var(--bg-border);
+  padding: var(--section-padding) var(--section-padding) 0;
 }
 
 .contact__inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  text-align: center;
-}
-
-.contact__title {
-  font-family: var(--font-heading);
-  font-weight: var(--weight-bold);
-  font-size: 2rem;
-  color: var(--text-primary);
-  margin-bottom: 16px;
-}
-
-.contact__subtitle {
-  color: var(--text-secondary);
-  font-size: 1.125rem;
-  margin-bottom: 48px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .contact__methods {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 64px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .contact-method {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
-  padding: 16px 24px;
-  border-radius: 12px;
-  border: 1px solid var(--bg-border);
+  padding: 12px 24px;
   background: var(--bg-secondary);
-  color: var(--text-primary);
-  font-family: var(--font-body);
+  border: 1px solid var(--bg-border);
+  border-radius: 6px;
+  font-family: var(--font-mono);
   font-weight: var(--weight-medium);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
+  color: var(--text-primary);
   transition: all 0.2s;
+}
+
+.contact-method .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
 }
 
 .contact-method:hover {
   border-color: var(--accent);
-  color: var(--accent);
-  transform: translateY(-2px);
-}
-
-.contact-method__icon {
-  font-size: 1.25rem;
+  transform: translateY(-1px);
 }
 
 .footer {
-  padding: 24px;
-  text-align: center;
+  max-width: var(--max-width);
+  margin: 80px auto 0;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   border-top: 1px solid var(--bg-border);
-  font-size: 0.8125rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   color: var(--text-tertiary);
+}
+
+.footer__built {
+  color: var(--accent);
 }
