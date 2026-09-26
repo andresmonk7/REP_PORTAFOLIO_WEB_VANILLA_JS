@@ -3,12 +3,12 @@
     {
       title: 'Desarrollo Backend & Frontend',
       icon: 'code-xml',
-      items: ['React', 'Node.js', 'TypeScript', 'Next.js', 'PostgreSQL'],
+      items: ['Angular', 'Node.js', 'TypeScript', 'c#', 'SQL'],
     },
     {
       title: 'Cloud & Infraestructura',
       icon: 'cloud-upload',
-      items: ['AWS', 'Terraform', 'Jenkins', 'Docker', 'Kubernetes'],
+      items: ['AWS', 'Terraform', 'Github-Actions', 'Docker', 'Kubernetes'],
     },
   ];
 
